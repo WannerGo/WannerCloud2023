@@ -1,0 +1,17 @@
+server:
+  port:  8761
+
+spring:
+  application:
+    name: eureka_server
+
+
+# https://docs.spring.io/spring-cloud-netflix/docs/current/reference/html/#service-discovery-eureka-clients
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+    register-with-eureka: false
+    fetch-registry: false
+  instance:
+    hostname: localhost
