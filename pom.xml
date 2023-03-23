@@ -11,7 +11,6 @@
         <module>wanner-order</module>
         <module>wanner-eureka</module>
         <module>wanner-storage</module>
-        <module>wanner-storage</module>
     </modules>
     <packaging>pom</packaging>
 
